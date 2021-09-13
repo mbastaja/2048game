@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>2048</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" charset="uft-8"></script>
+    <script src="https://kit.fontawesome.com/cc53b6bb42.js" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="container">
+
+        <div class="container">
+            <div class="title-container">
+                <div class="game-title">2048</div>
+            </div>
+            <div id="info-button">
+                <i class="fas fa-info-circle"></i>
+            </div>
+            <div class="container-score">
+                <div class="score-container">
+                    <div class="score-title">Score</div>
+                    <span id="score">0</span>
+                    <div class="add-points" id="add-points"></div>
+                </div>
+                <div class="best-container">
+                    <div class="best-title">Best</div>
+                    <span id="best">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="button-container">
+            <div class="endless-checkbox">
+                <label class="label-container">Endless
+                    <input class="checkbox" type="checkbox" unchecked>
+                    <span class="checkmark"></span>
+                  </label>
+            </div>
+            <!-- <div class="endless-checkbox"> -->
+                <!-- <label id="endless-checkbox" for="Endless">Endless</label> -->
+                <!-- <input class="checkbox  box" id="endless-checkbox" name="endless" unchecked> -->
+              <!-- </div> -->
+            <div class="button">
+                <button id="start" onclick="startingGame()">New game</button>
+                <!-- <button id="start" onclick="startingGame()"><i class="fas fa-redo-alt"></i></button> -->
+            </div>
+        </div>
+        <div class="game-container">
+            <div  class="about">
+                <span id="message">The objective of the game is to slide numbered tiles on a grid to combine them to
+                    create a tile
+                    with
+                    the number 2048. Use up, down, left and right arrows on keyboard. <br>
+                    <br> If you don't want to stop at 2048, choose Endless mode.</span>
+            </div>
+            <div class="grid"></div>
+            <div id="result"></div>
+        </div>
+    </div>
+</body>
+
+</html>
